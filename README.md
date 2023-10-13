@@ -58,33 +58,31 @@ Before you begin, make sure you have the following prerequisites:
     ```bash
     sudo apt-get update
     ```
-
-10. Install Kubernetes components (kubelet, kubeadm, containerd) and kubectl (only on Master):
-    ```bash
-    sudo apt-get install -y kubelet kubeadm containerd kubectl -y
-    ```
-
-11. Verify the Kubernetes and kubeadm versions:
-    ```bash
-    kubectl version
-    kubeadm version
-    ```
-
-12. To check available versions of kubectl:
+10. To check available versions of kubectl:
     ```bash
     apt list -a kubectl
     ```
 
-13. To check available versions of kubeadm:
+11. To check available versions of kubeadm:
     ```bash
     apt list -a kubeadm
     ```
 
-14. To check available versions of kubelet:
+12. To check available versions of kubelet:
     ```bash
     apt list -a kubelet
     ```
 
+13. Install Kubernetes components (kubelet, kubeadm, containerd) and kubectl (only on Master):
+    ```bash
+    sudo apt-get install -y kubelet kubeadm containerd kubectl -y
+    ```
+
+14. Verify the Kubernetes and kubeadm versions:
+    ```bash
+    kubectl version
+    kubeadm version
+    ```
 15. Load necessary kernel modules:
     ```bash
     modprobe overlay
